@@ -1,8 +1,8 @@
 
 let xpos = 500;
 let ypos = 0;
-let xballspeed = 1;
-let yballspeed = 1;
+let xballspeed = 2;
+let yballspeed = 2;
 
 function setup() {
 
