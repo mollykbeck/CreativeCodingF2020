@@ -34,7 +34,9 @@ function draw() {
   }
 
   if(mouseIsPressed & dist(mouseX,mouseY,xpos,ypos <35)){
-    dist(random(windowWidth,windowHeight));
+    xpos = (random(windowWidth,windowHeight));
+  }
+
   }
 
 
