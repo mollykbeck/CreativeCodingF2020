@@ -33,8 +33,8 @@ function draw() {
     yballspeed = -yballspeed;
   }
 
-  if(mouseIsPressed & dist(mouseX,mouseY,xpos,ypos <35)){
-    xpos = (random(windowWidth,windowHeight));
+  if(mouseIsPressed & dist(xpos,ypos,mouseX,mouseY <35)){
+     xpos = random(windowWidth,windowHeight);
   }
 
   }
