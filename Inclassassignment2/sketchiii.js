@@ -10,7 +10,7 @@ createCanvas(windowWidth,windowHeight);
 }
 
 function draw() {
-  
+
   background(245,214,93);
   fill(116,208,247);
   circle(xpos,ypos,70);
@@ -31,6 +31,10 @@ function draw() {
   }
   if(ypos <0){
     yballspeed = -yballspeed;
+  }
+
+  if(mouseIsPressed & dist(mouseX,mouseY,xpos,ypos <35)){
+    dist(random(windowWidth,windowHeight));
   }
 
 
