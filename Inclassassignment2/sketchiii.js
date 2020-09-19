@@ -38,9 +38,5 @@ function draw() {
       xpos = random(windowWidth,windowHeight);
       ypos = random(wondowwidth,windowHeight);
   }
-  else{
-    xpos = xpos;
-    ypos = ypos;
-  }
 
   }
