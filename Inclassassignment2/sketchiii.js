@@ -37,5 +37,7 @@ function draw() {
     dist(random(windowWidth,windowHeight));
   }
 
+  }
+
 
 }
