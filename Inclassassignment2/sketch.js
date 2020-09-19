@@ -1,15 +1,37 @@
 
-function setup() {
-  // put setup code here
-createCanvas(200,200);
-background(200,10,120);
+let xpos = 500;
+let ypos = 0;
+let xballspeed = 5;
+let yballspeed = 5;
 
+function setup() {
+
+createCanvas(windowWidth,windowHeight);
 }
 
 function draw() {
-  //Put draw code here
-  fill(30,40,200);
-  circle(100,100,70);
+  
+  background(245,214,93);
+  fill(116,208,247);
+  circle(xpos,ypos,70);
+
+  xpos = xpos +xballspeed;
+  ypos = ypos +yballspeed;
+
+  //check for x position
+  if(xpos > width){
+    xballspeed = -xballspeed;
+  }
+  if(xpos <0){
+    xballspeed = -xballspeed
+  }
+  //check for y position
+  if(ypos > height){
+    yballspeed = -yballspeed
+  }
+  if(ypos <0){
+    yballspeed = -yballspeed;
+  }
 
 
 }
