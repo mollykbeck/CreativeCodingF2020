@@ -12,7 +12,7 @@ function draw() {
       let rcol = random(0,255);
       let gcol = random(0,255);
       let bcol = random(0,255);
-      stroke(rcol,gcol,255);
+      stroke(255,255,255);
       fill(rcol,gcol,255);
       triangle(m,k,250,m,300,300);
     }
