@@ -11,7 +11,7 @@ function draw() {
     for(let k=20; k < height; k = k + 20){
       let rcol = random(0,255);
       let gcol = random(0,255);
-      let bcol = ransom(0,255);
+      let bcol = random(0,255);
       stroke(rcol,gcol,bcol);
       triangle(m,k,10,m,20,20);
     }
