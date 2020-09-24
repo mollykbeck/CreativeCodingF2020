@@ -21,4 +21,5 @@ function draw() {
   fill(255,255,255);
   circle(300,300,100);
   circle(345,220,50);
+  circle(420,260,20);
 }
