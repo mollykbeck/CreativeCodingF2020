@@ -7,4 +7,8 @@ function setup() {
 
 function draw() {
   //Put draw code here
+  for(let m=0; m < width; m = m + 20){
+    nofill();
+    rect(m,0,20);
+  }
 }
