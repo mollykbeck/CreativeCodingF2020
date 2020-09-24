@@ -8,10 +8,7 @@ function setup() {
 function draw() {
   //Put draw code here
 for(let i = 0; i <width; i = i + 20){
-  for(let j = 0; j <height; j = j + 20){
     nofill();
     rect(i,j,19);
   }
-}
-
 }
