@@ -12,8 +12,8 @@ function draw() {
       let rcol = random(0,255);
       let gcol = random(0,255);
       let bcol = random(0,255);
-      stroke(rcol,gcol,bcol);
-      fill(rcol,gcol,bcol);
+      stroke(255,gcol,bcol);
+      fill(255,gcol,bcol);
       triangle(m,k,10,m,20,20);
     }
   }
@@ -22,8 +22,8 @@ function draw() {
       let rcol = random(0,255);
       let gcol = random(0,255);
       let bcol = random(0,255);
-      stroke(rcol,gcol,bcol);
-      fill(rcol,gcol,bcol);
+      stroke(rcol,gcol,255);
+      fill(rcol,gcol,255);
       triangle(m,k,250,m,300,300);
     }
   }
