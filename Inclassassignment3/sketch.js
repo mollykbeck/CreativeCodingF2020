@@ -9,7 +9,7 @@ function draw() {
   //Put draw code here
   for(let m=0; m < width; m = m + 20){
     for(let k=0; k < height; k = k + 20){
-      rect(m,0,20);
+      rect(m,k,20);
     }
 
   }
