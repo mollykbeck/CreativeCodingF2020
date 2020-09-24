@@ -1,7 +1,7 @@
 
 function setup() {
   // put setup code here
-createCanvas(windowWidth,windowHeight):
+createCanvas(windowWidth,windowHeight);
 background(15,0,0);
 
 }
