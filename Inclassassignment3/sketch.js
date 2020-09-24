@@ -25,4 +25,6 @@ function draw() {
       stroke(rcol,gcol,bcol);
       fill(rcol,gcol,bcol);
       triangle(m,k,250,m,300,300);
+    }
+  }
 }
