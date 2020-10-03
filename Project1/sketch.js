@@ -9,7 +9,7 @@ function draw() {
   //keep background color red-orange
 background(255,83,73);
 //draw initial triangle
-triangle(10,100,75,0,140,100);
+triangle(10,110,75,10,140,110);
 
 
 }
