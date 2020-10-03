@@ -8,8 +8,8 @@ createCanvas(windowWidth,windowHeight);
 function draw() {
   //keep background color red-orange
 background(255,83,73);
-//draw initial triangle
-triangle(10,110,75,10,140,110);
+//draw initial circle
+circle(300,400,50);
 
 
 }
