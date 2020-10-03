@@ -1,11 +1,4 @@
 
-let atomic = (255,164,116);
-let vivid = (255,160,137);
-let sienna = (234,126,93);
-let apricot = (253,217,181);
-
-
-
 function setup() {
   // create full-screen canvas
 createCanvas(windowWidth,windowHeight);
@@ -24,5 +17,8 @@ fill(255,164,116);
 stroke(255,160,137);
 circle(350,250,75);
 
+fill(253,217,181);
+stroke(255,164,116);
+circle(350,175,45);
 
 }
