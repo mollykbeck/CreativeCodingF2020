@@ -9,7 +9,7 @@ function draw() {
   //keep background color red-orange
 background(255,83,73);
 //draw initial circle
-circle(300,400,50);
+circle(300,200,50);
 
 
 }
