@@ -6,7 +6,7 @@ createCanvas(windowWidth,windowHeight);
 }
 
 function draw() {
-  //keep background color consistent
+  //keep background color red-orange
 background(255,83,73);
 
 
