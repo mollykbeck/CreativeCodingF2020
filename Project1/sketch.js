@@ -5,6 +5,9 @@ let ypos = 200
 function setup() {
   // create full-screen canvas
   createCanvas(windowWidth,windowHeight);
+}
+
+function draw() {
   //keep background color red-orange
   background(255,83,73);
   //initial cluster of circles (3)
@@ -21,7 +24,4 @@ if(mouseIsPressed & dist(xpos,ypos,mouseX,mouseY <50)){
   stroke(255,164,116);
   circle(350,175,45);
   }
-}
-
-function draw() {
 }
