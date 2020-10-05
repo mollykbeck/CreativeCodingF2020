@@ -18,11 +18,11 @@ function draw() {
 //left eyebrow
   fill(227,177,145);
   stroke(227,177,145);
-  ellipse(520,210,100,50);
+  ellipse(520,210,110,50);
 
   fill(255,220,190);
   stroke(255,220,190);
-  ellipse(520,220,100,50);
+  ellipse(520,220,110,50);
 
 //left eye
   fill(227,177,145);
@@ -44,11 +44,11 @@ function draw() {
 //right eyebrow
   fill(227,177,145);
   stroke(227,177,145);
-  ellipse(670,210,100,50);
+  ellipse(670,210,110,50);
 
   fill(255,220,190);
   stroke(255,220,190);
-  ellipse(670,220,100,50);
+  ellipse(670,220,110,50);
 
 //right eye
   fill(227,177,145);
