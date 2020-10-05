@@ -22,7 +22,7 @@ function draw() {
 
   fill(255,220,190);
   stroke(255,220,190);
-  ellipse(520,250,100,50);
+  ellipse(520,220,100,50);
 
 //left eye
   fill(227,177,145);
@@ -48,7 +48,7 @@ function draw() {
 
   fill(255,220,190);
   stroke(255,220,190);
-  ellipse(670,250,100,50);
+  ellipse(670,220,100,50);
 
 //right eye
   fill(227,177,145);
