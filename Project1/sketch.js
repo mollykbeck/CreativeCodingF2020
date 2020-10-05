@@ -3,11 +3,12 @@ let xpos = 300
 let ypos = 200
 
 function setup() {
-  // create full-screen canvas
-  createCanvas(windowWidth,windowHeight);
+
 }
 
 function draw() {
+  // create full-screen canvas
+createCanvas(windowWidth,windowHeight);
   //keep background color red-orange
   background(255,83,73);
   //initial cluster of circles (3)
