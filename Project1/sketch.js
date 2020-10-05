@@ -10,5 +10,7 @@ function draw() {
   //initial background color red-orange
   background(255,83,73);
 
-  ellipse(width/2,height/2,300,400);
+  fill(255,220,199);
+  stroke(255,220,199);
+  ellipse(width/2,height/2,375,450);
 }
