@@ -7,13 +7,24 @@ createCanvas(windowWidth,windowHeight);
 
 function draw() {
 
-  //initial background color red-orange
+//initial background color red-orange
   background(255,83,73);
 
+//face
   fill(255,220,199);
   stroke(255,220,199);
   ellipse(width/2,height/2,375,450);
 
+//left eyebrow
+  fill(227,177,145);
+  stroke(227,177,145);
+  ellipse(520,240,100,50);
+
+  fill(255,220,190);
+  stroke(255,220,190);
+  ellipse(520,250,100,50);
+
+//left eye
   fill(227,177,145);
   stroke(227,177,145);
   ellipse(520,240,100,50);
@@ -30,6 +41,16 @@ function draw() {
   stroke(0,0,0);
   circle(520,250,25);
 
+//right eyebrow
+  fill(227,177,145);
+  stroke(227,177,145);
+  ellipse(670,240,100,50);
+
+  fill(255,220,190);
+  stroke(255,220,190);
+  ellipse(670,250,100,50);
+
+//right eye
   fill(227,177,145);
   stroke(227,177,145);
   ellipse(670,240,100,50);
