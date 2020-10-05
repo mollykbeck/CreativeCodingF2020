@@ -29,5 +29,8 @@ if(mouseIsPressed & dist(300,200,mouseX,mouseY <50)){
   stroke(255,164,116);
   circle(350,175,45);
 }
+if(mouseIsPressed & dist(300,200,mouseX,mouseY <50)){
+  background(0);
+}
 
 }
