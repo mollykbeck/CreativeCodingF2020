@@ -70,6 +70,6 @@ function draw() {
 //nose
   fill(255,255,255);
   stroke(255,255,255);
-  circle(width/2,400,50);
+  circle(width/2,300,50);
 
 }
