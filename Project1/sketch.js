@@ -26,6 +26,10 @@ function draw() {
   stroke(255,255,255);
   circle(520,250,50);
 
+  fill(0,0,0);
+  stroke(0,0,0);
+  circle(520,250,25);
+
   fill(227,177,145);
   stroke(227,177,145);
   ellipse(670,240,100,50);
@@ -37,5 +41,9 @@ function draw() {
   fill(75,191,133);
   stroke(255,255,255);
   circle(670,250,50);
+
+  fill(0,0,0);
+  stroke(0,0,0);
+  circle(670,250,25);
 
 }
