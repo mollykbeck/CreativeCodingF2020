@@ -3,6 +3,9 @@
 function setup() {
   // create full-screen canvas
 createCanvas(windowWidth,windowHeight);
+}
+
+function draw() {
 
   //keep background color red-orange
   background(255,83,73);
@@ -26,8 +29,5 @@ if(mouseIsPressed & dist(300,200,mouseX,mouseY <50)){
   stroke(255,164,116);
   circle(350,175,45);
 }
-}
-
-function draw() {
 
 }
