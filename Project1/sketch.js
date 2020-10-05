@@ -15,6 +15,11 @@ function draw() {
   circle(300,200,100);
 
 if(mouseIsPressed & dist(300,200,mouseX,mouseY <50)){
+  fill(255,83,73);
+  stroke(255,164,116);
+  circle(300,200,100);
+}
+if(mouseIsPressed & dist(300,200,mouseX,mouseY <50)){
   fill(255,164,116);
   stroke(255,160,137);
   circle(350,250,75);
