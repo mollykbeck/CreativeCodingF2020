@@ -18,7 +18,8 @@ function draw() {
   ellipse(520,240,100,50);
 
   fill(75,191,133);
-  circle(520,250,50)
+  stroke(255,255,255);
+  circle(520,250,50);
 
   fill(255,255,255);
   ellipse(520,250,100,50);
@@ -27,7 +28,8 @@ function draw() {
   ellipse(670,240,100,50);
 
   fill(75,191,133);
-  circle(520,250,50)
+  stroke(255,255,255);
+  circle(670,250,50);
 
   fill(255,255,255);
   ellipse(670,250,100,50);
