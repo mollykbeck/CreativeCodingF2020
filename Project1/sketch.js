@@ -67,4 +67,9 @@ function draw() {
   stroke(0,0,0);
   circle(670,250,25);
 
+//nose
+  fill(255,255,255);
+  stroke(255,255,255);
+  circle(width/2,height/2,50);
+  
 }
