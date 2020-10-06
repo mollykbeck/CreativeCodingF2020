@@ -7,6 +7,7 @@ createCanvas(windowWidth,windowHeight);
 
 function draw() {
 // background color (red-orange)
+background(0,0,0);
   if(keyIsPressed & keyCode === UP_ARROW){
     background(255,83,73);
   }
@@ -21,16 +22,16 @@ function draw() {
     background(198,2,242);
   }
 //hair
-  fill(0,0,0);
-  stroke(0,0,0);
-  circle(width/2,240,520);
+  fill(255,255,250);
+  stroke(255,255,250);
+  circle(597,240,520);
 //face
   fill(255,220,199);
   stroke(255,220,199);
-  ellipse(width/2,height/2,375,450);
+  ellipse(597,280,375,450);
 //bangs
-  fill(0,0,0);
-  stroke(0,0,0);
+  fill(255,255,250);
+  stroke(255,255,250);
   rect(423,50,350,110);
 //nose
 //nostrils
@@ -41,20 +42,20 @@ function draw() {
 //tip of nose
   fill(255,228,212);
   stroke(255,220,199);
-  circle(width/2,315,50);
+  circle(597,315,50);
 //mouth
 //upper lip
   fill(255,83,73);
   stroke(255,83,73);
-  triangle(520,400,width/2,380,width/2,400);
-  triangle(width/2,404,width/2,380,670,400);
+  triangle(520,400,597,380,597,400);
+  triangle(597,404,597,380,670,400);
 //lower lip
   fill(227,72,64);
-  triangle(520,400,670,400,width/2,415);
+  triangle(520,400,670,400,597,415);
 //chin
   fill(255,228,212);
   stroke(255,228,212);
-  ellipse(width/2,470,100,60);
+  ellipse(597,470,100,60);
 
   //sunglasses
   fill(75,191,133);
