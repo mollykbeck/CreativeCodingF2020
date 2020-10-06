@@ -4,14 +4,13 @@ function setup() {
   // create full-screen canvas
 createCanvas(windowWidth,windowHeight);
 }
-
 function draw() {
-// background color (red-orange)
-background(0,0,0);
+// main background color
+  background(0,0,0);
+//background color changes
   if(keyIsPressed & keyCode === UP_ARROW){
     background(255,83,73);
   }
-//background color change
   if(keyIsPressed & keyCode === DOWN_ARROW){
     background(100,130,250);
   }
@@ -21,6 +20,7 @@ background(0,0,0);
   if(keyIsPressed & keyCode === RIGHT_ARROW){
     background(198,2,242);
   }
+//begin drawing figure (tip: draw from back to front)
 //hair
   fill(255,255,250);
   stroke(255,255,250);
@@ -29,7 +29,7 @@ background(0,0,0);
   fill(255,220,199);
   stroke(255,220,199);
   ellipse(597,280,375,450);
-//bangs
+//hair part 2: bangs
   fill(255,255,250);
   stroke(255,255,250);
   rect(423,50,350,110);
@@ -57,7 +57,7 @@ background(0,0,0);
   stroke(255,228,212);
   ellipse(597,470,100,60);
 
-  //sunglasses
+  //initial drawing of sunglasses
   fill(75,191,133);
   stroke(75,191,133);
   rect(505,225,200,12);
@@ -76,7 +76,8 @@ background(0,0,0);
   fill(0,0,0);
   stroke(75,191,133);
   circle(485,260,175);
-
+//the color changing lenses
+//follow clockwise cycle of colors shifted back once
   if(keyIsPressed & keyCode === UP_ARROW){
     fill(242,162,2);
     stroke(75,191,133);
