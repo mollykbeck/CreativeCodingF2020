@@ -32,7 +32,7 @@ background(0,0,0);
 //bangs
   fill(255,255,250);
   stroke(255,255,250);
-  rect(430,50,350,110);
+  rect(423,50,350,110);
 //nose
 //nostrils
   fill(245,200,174);
