@@ -10,15 +10,33 @@ function draw() {
 //background color changes
   if(keyIsPressed & keyCode === UP_ARROW){
     background(255,83,73);
+//flash of light upper leftthand corner
+    fill(242,162,2);
+    stroke(242,162,2);
+    triangle(0,0,300,0,0,110);
+    triangle(0,0,110,0,0,450);
+    triangle(0,90,130,0,200,250);
   }
   if(keyIsPressed & keyCode === DOWN_ARROW){
     background(100,130,250);
+//flash of light lower righthand corner
+    triangle(700,700,1300,400,1300,700);
+    triangle(1000,700,1300,200,1300,700);
+    triangle(1100,700,900,350,1500,700);
   }
   if(keyIsPressed & keyCode === LEFT_ARROW){
     background(242,162,2);
+//flash of light from lower lefthand corner
+    triangle(0,700,0,200,100,700);
+    triangle(0,700,0,400,500,700);
+    triangle(0,500,250,200,200,700);
   }
   if(keyIsPressed & keyCode === RIGHT_ARROW){
     background(198,2,242);
+//flash of light upper righthand corner
+        triangle(900,0,1300,0,1300,350);
+        triangle(1000,0,1300,0,1300,600);
+        triangle(1100,0,1300,300,900,400);
   }
 //begin drawing figure (tip: draw from back to front)
 
