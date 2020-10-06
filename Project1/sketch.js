@@ -6,7 +6,7 @@ createCanvas(windowWidth,windowHeight);
 }
 function draw() {
 // main background color
-  background(0,0,0);
+  background(14,12,20);
 //background color changes
   if(keyIsPressed & keyCode === UP_ARROW){
     background(255,83,73);
@@ -21,8 +21,22 @@ function draw() {
     background(198,2,242);
   }
 //begin drawing figure (tip: draw from back to front)
+
+//neck
+fill(245,200,174);
+stroke(245,200,174);
+rect(495,420,200,500);
+//turtleneck sweater pieces
+fill(210,210,212);
+stroke(210,210,212);
+rect(485,530,220,100);
+fill(210,210,212);
+ellipse(597,710,800,230);
+
+
+
 //hair
-  fill(255,255,250);
+  fill(255,255,245);
   stroke(255,255,250);
   circle(597,240,520);
 //face
@@ -30,7 +44,7 @@ function draw() {
   stroke(255,220,199);
   ellipse(597,280,375,450);
 //hair part 2: bangs
-  fill(255,255,250);
+  fill(255,255,245);
   stroke(255,255,250);
   rect(423,50,350,110);
 //nose
@@ -66,15 +80,15 @@ function draw() {
   fill(75,191,133)
   stroke(75,191,133);
   circle(710,260,200);
-  fill(0,0,0);
-  stroke(75,191,133);
+  fill(14,12,20);
+  stroke(14,12,20);
   circle(710,260,175);
   //left lens
   fill(75,191,133);
   stroke(75,191,133);
   circle(485,260,200);
-  fill(0,0,0);
-  stroke(75,191,133);
+  fill(14,12,20);
+  stroke(14,12,20);
   circle(485,260,175);
 //the color changing lenses
 //follow clockwise cycle of colors shifted back once
