@@ -1,45 +1,43 @@
 //vertical
-let xposvList = [200,600,900];
-let yposvList = [100,300,600];
-//horizontal
-let xposhList = [400,600,800];
-let yposhList = [250,300,450];
+let xposList = [200,400,600,800,1000];
+let yposList = [100,300,400,500,600];
 //ballspeeds
-let xspeedList = [10,10,10];
-let yspeedList = [10,10,10];
+let xspeedList = [5,6,5,7,5];
+let yspeedList = [5,5,7,5,6];
+//circle sizes
+let sizeList = [70,150,110,130,90];
 
 function setup() {
 createCanvas(windowWidth,windowHeight);
-
 }
 
 function draw() {
 background(145,0,150);
-//vertical moving balls
-  for(let i = 0; i < xposvList.length; i = i +1){
-    circle(xposvList[i],yposvList[i],100);
 
-    yposvList[i] = yposvList[i] + yspeedList;
+for(let i = 0; i < xposList.length; i = i +1){
+  stroke(255,115,8);
+  fill(255,115,8);
+  circle(xposList[i],yposList[i],sizeList[i]);
 
-    if(yposvList[i] > height){
-      yspeedList[i] = -yspeedList[i];
-    }
-    if(yposvList[i] < 0){
-      yspeedList[i] = -yspeedList[i];
-    }
+  xposList[i] = xposList[i] + xspeedList[i];
+  yposList[i] = yposList[i] + yspeedList[i];
+//check points
+  if(xposList[i] > width){
+    xspeedList[i] = -xspeedList[i];
   }
-  //horizontal moving balls
-  for(let m = 0; m < xposhList.length; m = m +1){
-    circle(xposhlist[m],yposhList[m],100);
-
-    xposhList[m] = xposhList[m] + xspeedList;
-
-    if(xposhList[m] > width){
-      xspeedList[m] = -xspeedList[m];
-    }
-    if(xposhList[m] < 0){
-      xspeedList[m] = -xspeedList[m];
-    }
+  if(xposList[i] < 0){
+    xspeedList[i] = -xspeedList[i];
+  }
+  if(yposList[i] > height){
+    yspeedList[i] = -yspeedList[i];
+  }
+  if(yposList[i] < 0){
+    yspeedList[i] = -yspeedList[i];
+  }
+  if(mouseIsPressed & dist(mouseX,mouseY,xposList[i],yposList[i]) < sizeList[i]/2 ){
+    xposList[i] = -200;
+    yposList[i] = -300;
   }
 
+}
 }
