@@ -40,7 +40,7 @@ image(inkblot, width*1/5,height*1/5);
 //frantic inklots to make the viewer feel confused/tested
   for(let i = 0; i<width; i = i+400){
     for(let j = 0; j<height; j = j+400){
-//full opacity
+//full opacity to show above all 
       tint(249,239,210);
       image(inkblot,i,j,width/3,height/3,random(0-400));
     }
