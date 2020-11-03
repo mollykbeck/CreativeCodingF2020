@@ -1,5 +1,6 @@
 
 let inkblot;
+let inkblot2;
 let journal;
 let journal2;
 
@@ -10,6 +11,7 @@ let bcol = random(0-255);
 
 function preload(){
   inkblot = loadImage('https://i.imgur.com/LqDDNVn.png');
+  inkblot2 = loadImage('https://i.imgur.com/W1k4KYg.jpg');
   journal = loadImage('https://i.imgur.com/Sq1JLKA.jpg');
   journal2 = loadImage('https://i.imgur.com/jGz1upV.jpg');
 }
@@ -23,6 +25,7 @@ background(249,239,210);
 
 function draw() {
 
+image(inkblot2,width/2,height/2);
 image(journal2,width/15,height/15,width/2,height/2);
 
 //insert text to create depth and texture
