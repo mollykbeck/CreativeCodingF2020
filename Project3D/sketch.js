@@ -1,5 +1,5 @@
 
-//watter falling from a faucet
+//hydrologic cycle, stage 4: runoff
 
 function setup() {
 

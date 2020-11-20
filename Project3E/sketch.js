@@ -1,5 +1,5 @@
 
-//drawing shapes in condensation
+//hydrologic cycle, stage 5: evapotranspiration
 
 function setup() {
 

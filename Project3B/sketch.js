@@ -1,5 +1,5 @@
 
-//lights relecting off of a puddle
+//hydrologic cycle, stage 2: precipitation
 
 function setup() {
 

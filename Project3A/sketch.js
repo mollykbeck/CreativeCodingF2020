@@ -1,5 +1,5 @@
 
-//rain falling outside of a window
+//hydrologic cycle, stage 1: condensation
 
 function setup() {
 

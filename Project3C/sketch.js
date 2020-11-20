@@ -1,5 +1,5 @@
 
-//Stalactite dripping
+//hydrologic cycle, stage 3: infiltration
 
 function setup() {
 
