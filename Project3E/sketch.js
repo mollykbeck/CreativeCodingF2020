@@ -5,6 +5,9 @@ function setup() {
 createCanvas(windowWidth,windowHeight);
   background(72,179,250);
 
+  noLoop();
+
+
 }
 
 function draw() {
@@ -20,12 +23,11 @@ stroke(255,255,255);
 fill(255,255,255);
 circle(width/4,height/6,100);
 circle(width/4,height/4,150);
-
 circle(width/5,height/5,75);
 circle(width/3,height/5,135);
-
 circle(width/7,height/5,100);
 circle(width/6,height/4,100);
+
 
 
 }
