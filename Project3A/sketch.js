@@ -36,7 +36,7 @@ noFill();
 }
 
 function draw() {
-  //bezier curvs mimic the water molecules in the form of vapor within the clouds
+  //bezier curves mimic the water vapor within the clouds during condensation
 x1 = noise(offset)*width;
 x2 = noise(offset +300)*width;
 x3 = noise(offset +600)*width;
@@ -48,11 +48,12 @@ y3 = noise(offset +900)*height;
 y4 = noise(offset +1100)*height;
 
 strokeWeight(1);
-stroke(194,217,252,75);
+stroke(194,217,252,65);
 bezier(x1,y1,x2,y2,x3,y3,x4,y4);
 
 offset = offset + 0.01;
 
+  //white curves layerd over the blue to add to hazy vapor look
 x1 = noise(offset)*width;
 x2 = noise(offset +200)*width;
 x3 = noise(offset +500)*width;
