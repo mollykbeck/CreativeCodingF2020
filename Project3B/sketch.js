@@ -13,10 +13,10 @@ function draw() {
 imageMode(CENTER);
 stroke(255,255,255);
 fill(255,255,255);
-circle(width/2,height/50,500);
-circle(width/3,height/40,340);
-circle(width*2/3,height/40,340);
-circle(width/7,height/1000,400);
-circle(width*6/7,height/1000,400);
+circle(width/2,0,400);
+circle(width/3,-30,200);
+circle(width*2/3,0,300);
+circle(width/7,0,400);
+circle(width*6/7,-40,400);
 
 }
