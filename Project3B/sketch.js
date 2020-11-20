@@ -3,6 +3,7 @@
 
 function setup() {
 createCanvas(windowWidth,windowHeight);
+  //gloomy color choice for rainy day
   background(119,138,168);
 }
 

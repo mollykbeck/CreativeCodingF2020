@@ -3,6 +3,7 @@
 
 function setup() {
 createCanvas(windowWidth,windowHeight);
+  //faded blue color choice for cloudy sky
   background(194,217,252);
 
 
