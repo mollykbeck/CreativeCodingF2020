@@ -3,7 +3,7 @@
 
 function setup() {
 createCanvas(windowWidth,windwoHeight);
-
+  background(194,217,252);
 
 }
 
