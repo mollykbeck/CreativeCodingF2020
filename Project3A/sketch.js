@@ -16,7 +16,7 @@ function draw() {
 imageMode(CENTER);
 stroke(255,255,255);
 fill(255,255,255);
-circle(width/2,height/2,300);
+circle(width/2,height/4,400);
 circle(width/2,height*2/3,500);
 
 circle(width/3,height*2/5,340);
