@@ -152,6 +152,7 @@ if(mouseY < height/6){
 
 //the ground which creates the horizon line for the sun to set behind
 //must be coded last to be infront of everything
+//needed to make ground stagnant- noLoop command stopped other transitions
 if(mouseX < width/12){
   //RGB code opposite of sky color 1 (repeats)
   fill(28,0,12);
