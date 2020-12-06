@@ -101,27 +101,27 @@ function draw() {
     circle(width/2,height,400);
   }
 
-// GRID
-//vertical lines - represents 12 hrs in a day
-stroke(0,0,0);
-line(width/12,0,width/12,height);
-line(width/6,0,width/6,height);
-line(width/4,0,width/4,height);
-line(width/3,0,width/3,height);
-line(width*5/12,0,width*5/12,height);
-line(width/2,0,width/2,height);
-line(width*7/12,0,width*7/12,height);
-line(width*2/3,0,width*2/3,height);
-line(width*3/4,0,width*3/4,height);
-line(width*5/6,0,width*5/6,height);
-line(width*11/12,0,width*11/12,height);
-//horizontal lines - sun heights through the day
-//half as many units, the sun will rise & fall
-line(0,height/6,width,height/6);
-line(0,height/3,width,height/3);
-line(0,height/2,width,height/2);
-line(0,height*2/3,width,height*2/3);
-line(0,height*5/6,width,height*5/6);
+  // GRID
+  //vertical lines - represents 12 hrs in a day
+//stroke(0,0,0);
+//line(width/12,0,width/12,height);
+//line(width/6,0,width/6,height);
+//line(width/4,0,width/4,height);
+//line(width/3,0,width/3,height);
+//line(width*5/12,0,width*5/12,height);
+//line(width/2,0,width/2,height);
+//line(width*7/12,0,width*7/12,height);
+//line(width*2/3,0,width*2/3,height);
+//line(width*3/4,0,width*3/4,height);
+//line(width*5/6,0,width*5/6,height);
+//line(width*11/12,0,width*11/12,height);
+  //horizontal lines - sun heights through the day
+ //half as many units, the sun will rise & fall
+//line(0,height/6,width,height/6);
+//line(0,height/3,width,height/3);
+//line(0,height/2,width,height/2);
+//line(0,height*2/3,width,height*2/3);
+//line(0,height*5/6,width,height*5/6);
 
 //clouds appear as the mouse moves up and down
 if(mouseY < height/6){
