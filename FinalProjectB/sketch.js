@@ -1,104 +1,115 @@
 
-let cloud;
+let moon;
+let stars;
 
 function preload() {
-  cloud = loadImage('https://i.imgur.com/eiM7zrd.png');
+  moon = loadImage('https://i.imgur.com/XEf77MT.png');
+  stars = loadImage('https://i.imgur.com/p1TtAn8.png');
 }
-
 function setup() {
 createCanvas(windowWidth,windowHeight);
 }
 
 function draw() {
-//background changes as the sun rises and falls
-//colors loop back around (purple to yellow complimentary colors)
+//background changes as the moon moves from East to West
+//colors start with the purple from Final Part 1
   if(mouseX < width/12){
-    //sky color 1
+    //sky color 1 (same as Part 1)
     background(118,112,171);
   } else if(mouseX < width/6){
     //sky color 2
-    background(188,137,192);
+    background(100,84,168);
   } else if(mouseX < width/4){
     //sky color 3
-    background(213,165,177);
+    background(85,43,130);
   } else if(mouseX < width/3){
     //sky color 4
-    background(234,217,195);
+    background(56,28,87);
   } else if(mouseX < width*5/12){
     //sky color 5
-    background(244,255,227);
+    background(26,12,41);
   } else if(mouseX < width/2){
-    //sky color 6
-    background(227,255,243);
-  } else if(mouseX < width*7/12){
-    //sky color 6
-    background(227,255,243);
-  } else if(mouseX < width*2/3){
-    //sky color 5
-    background(244,255,227);
-  } else if(mouseX < width*3/4){
     //sky color 4
-    background(234,217,195);
-  } else if(mouseX < width*5/6){
+    background(56,28,87);
+  } else if(mouseX < width*7/12){
     //sky color 3
-    background(213,165,177);
-  } else if(mouseX < width*11/12){
+    background(85,43,130);
+  } else if(mouseX < width*2/3){
     //sky color 2
-    background(188,137,192);
-  } else if(mouseX > width*11/12){
+    background(100,84,168);
+  } else if(mouseX < width*3/4){
     //sky color 1
     background(118,112,171);
+  } else if(mouseX < width*5/6){
+    //sky color 6
+    background(255,207,110);
+  } else if(mouseX < width*11/12){
+    //sky color 7
+    background(255,172,94);
+  } else if(mouseX > width*11/12){
+    //sky color 8
+    background(255,151,94);
   }
 
-//as mouse moves left to right the sun moves up and down
+//as the mouse moves left to right the moon moves invevrsely
+//movement opposite of the mouse intentional
   if(mouseX < width/12){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height,400);
+    imageMode(CENTER);
+    image(moon, width*11/12,height/3);
   } else if(mouseX < width/6){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height*5/6,400);
+    imageMode(CENTER);
+    image(moon, width*5/6,height/3);
   } else if(mouseX < width/4){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height*2/3,400);
+    imageMode(CENTER);
+    image(moon, width*3/4,height/3);
   } else if(mouseX < width/3){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height/2,400);
+    imageMode(CENTER);
+    image(moon, width*2/3,height/3);
   } else if(mouseX < width*5/12){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height/3,400);
+    imageMode(CENTER);
+    image(moon, width*7/12,height/3);
   } else if(mouseX < width/2){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height/6,400);
+    imageMode(CENTER);
+    image(moon, width/2,height/3);
   } else if(mouseX < width*7/12){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height/6,400);
+    imageMode(CENTER);
+    image(moon, width*5/12,height/3);
   } else if(mouseX < width*2/3){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height/3,400);
+    imageMode(CENTER);
+    image(moon, width/3,height/3);
   } else if(mouseX < width*3/4){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height/2,400);
+    imageMode(CENTER);
+    image(moon, width/4,height/3);
   } else if(mouseX < width*5/6){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height*2/3,400);
+    imageMode(CENTER);
+    image(moon, width/6,height/3);
   } else if(mouseX < width*11/12){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height*5/6,400);
+    imageMode(CENTER);
+    image(moon, width/12,height/3);
   } else if(mouseX > width*11/12){
-    fill(254, 255, 227);
-    noStroke();
-    circle(width/2,height,400);
+    imageMode(CENTER);
+    image(moon, width/12,height/3);
+  }
+//stars in the sky change location as mouse moves up & down
+//almost appears to be snow... I don't hate that about it
+  if(mouseY < height/6){
+    imageMode(CENTER);
+    image(stars,width/2,height/6,);
+  } else if(mouseY < height/3){
+    imageMode(CENTER);
+    image(stars,width/2,height/3);
+  } else if(mouseY < height/2){
+    imageMode(CENTER);
+    image(stars,width/2,height/4);
+  } else if(mouseY < height*2/3){
+    imageMode(CENTER);
+    image(stars,width/2,height/3);
+  } else if(mouseY < height*5/6){
+    imageMode(CENTER);
+    image(stars,width/2,height/6);
+  } else if(mouseY > height*5/6){
+    imageMode(CENTER);
+    image(stars,width/2,0);
   }
 
 // GRID
@@ -123,78 +134,56 @@ line(0,height/2,width,height/2);
 line(0,height*2/3,width,height*2/3);
 line(0,height*5/6,width,height*5/6);
 
-//clouds appear as the mouse moves up and down
-if(mouseY < height/6){
-  imageMode(CENTER);
-  tint(255,255,255,42.5);
-  image(cloud,width/2,height/5,width*1.25,height/2);
-} else if(mouseY < height/3){
-  imageMode(CENTER);
-  tint(255,255,255,85);
-  image(cloud,width/2,height/5,width*1.25,height/2);
-} else if(mouseY < height/2){
-  imageMode(CENTER);
-  tint(255,255,255,127.5);
-  image(cloud,width/2,height/5,width*1.25,height/2);
-} else if(mouseY < height*2/3){
-  imageMode(CENTER);
-  tint(255,255,255,127.5);
-  image(cloud,width/2,height/5,width*1.25,height/2);
-} else if(mouseY < height*5/6){
-  imageMode(CENTER);
-  tint(255,255,255,85);
-  image(cloud,width/2,height/5,width*1.25,height/2);
-} else if(mouseY > height*5/6){
-  imageMode(CENTER);
-  tint(255,255,255,42.5);
-  image(cloud,width/2,height/5,width*1.25,height/2);
-}
-
 //the ground which creates the horizon line for the sun to set behind
-//must be coded last to be infront of everything
 //needed to make ground stagnant- noLoop command stopped other transitions
+//brightness gives the illusion that the moon is shining on the ground
 if(mouseX < width/12){
-  //RGB code opposite of sky color 1 (repeats)
-  fill(28,0,12);
+  //opposite of sky color 1 (same as Part 1)
+  fill(137,143,84);
   rect(0,height,width,-100);
 } else if(mouseX < width/6){
-  //RGB code opposite of sky color 2 (repeats)
-  fill(11,0,28);
+  //opposite of sky color 2
+  fill(155,171,87);
   rect(0,height,width,-100);
 } else if(mouseX < width/4){
-  //RGB code opposite of sky color 3 (repeats)
-  fill(21,38,60);
+  //opposite of sky color 3
+  fill(170,212,125);
   rect(0,height,width,-100);
 } else if(mouseX < width/3){
-  //RGB code opposite of sky color 4 (repeats)
-  fill(42,90,78);
+  //opposite of sky color 4
+  fill(199,227,168);
   rect(0,height,width,-100);
 } else if(mouseX < width*5/12){
-  //RGB code opposite of sky color 5 (repeats)
-  fill(67,118,63);
+  //opposite of sky color 5
+  fill(229,243,214);
   rect(0,height,width,-100);
 } else if(mouseX < width/2){
-  //RGB code opposite of sky color 6 (repeats)
-  fill(137,143,84);
+  //opposite of sky color 4
+  fill(199,227,168);
   rect(0,height,width,-100);
 } else if(mouseX < width*7/12){
-  fill(137,143,84);
+  //opposite of sky color 3
+  fill(170,212,125);
   rect(0,height,width,-100);
 } else if(mouseX < width*2/3){
-    fill(67,118,63);
-    rect(0,height,width,-100);
+  //opposite of sky color 2
+  fill(155,171,87);
+  rect(0,height,width,-100);
 } else if(mouseX < width*3/4){
-  fill(42,90,78);
+  //opposite of sky color 1
+  fill(137,143,84);
   rect(0,height,width,-100);
 } else if(mouseX < width*5/6){
-  fill(21,38,60);
+  //opposite of sky color 6
+  fill(0,48,145);
   rect(0,height,width,-100);
 } else if(mouseX < width*11/12){
-  fill(11,0,28);
+  //opposite of sky color 7
+  fill(0,83,161);
   rect(0,height,width,-100);
 } else if(mouseX > width*11/12){
-  fill(28,0,12);
+  //opposite of sky color 8
+  fill(0,104,161);
   rect(0,height,width,-100);
 }
-
 }
